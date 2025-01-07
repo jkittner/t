@@ -7,13 +7,9 @@ version = "0.1.0"
 fail_under = 100
 
 [tool.coverage.run]
+plugins = ["covdefaults"]
 parallel = true
+source = ["t", "tests"]
 
 [tool.coverage.paths]
-source = [
-   "src/",
-   "*/site-packages",
-   "tests",
-   "t",
-]
-plugins = ["covdefaults"]
+wat = ["src", "*/site-packages"]
