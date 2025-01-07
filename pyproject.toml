@@ -1,0 +1,19 @@
+[project]
+name = "t"
+description = "test"
+version = "0.1.0"
+
+[tool.coverage.report]
+fail_under = 100
+
+[tool.coverage.run]
+parallel = true
+
+[tool.coverage.paths]
+source = [
+   "src/",
+   "*/site-packages",
+   "tests",
+   "t",
+]
+plugins = ["covdefaults"]
